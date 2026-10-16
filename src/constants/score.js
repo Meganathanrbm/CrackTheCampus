@@ -1,7 +1,7 @@
-import badgeSkills from '@/assets/images/badges/badge-skills.png'
-import badgePractice from '@/assets/images/badges/badge-practice.png'
-import badgeSoftware from '@/assets/images/badges/badge-software.png'
-import badgeCtcHero from '@/assets/images/badges/badge-ctc-hero.png'
+import badgeSkills from '@/assets/images/badges/badge-skills.webp'
+import badgePractice from '@/assets/images/badges/badge-practice.webp'
+import badgeSoftware from '@/assets/images/badges/badge-software.webp'
+import badgeCtcHero from '@/assets/images/badges/badge-ctc-hero.webp'
 
 export const SCORE_CONTENT = {
   eyebrow: 'The Why',
