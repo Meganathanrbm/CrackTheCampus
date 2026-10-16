@@ -61,14 +61,24 @@ src/
 
 **JavaScript.** Everything below the hero is a separate chunk that loads right after it, so first-load JS is about 117 kB gzipped. `motion` runs through `LazyMotion` with only the DOM features. Icons are tree-shaken. The hero entrance is plain CSS. There is no router or extra library.
 
-**Other.** The two Ecosystem videos (4.1 MB and 1.85 MB) load only when scrolled near, show a poster first, and don't autoplay with reduced motion. The footer map loads on click.
+**Other.** The two Ecosystem videos (4.1 MB and 1.85 MB) load only when scrolled near, show a poster first, and don't autoplay with reduced motion.
 
 ### Lighthouse (deployed)
 
 | | Performance | Accessibility | Best Practices | SEO | FCP | LCP | TBT | CLS | Speed Index |
 |---|---|---|---|---|---|---|---|---|---|
-| Mobile | 85 | 100 | 100 | 100 | 2.0 s | 2.6 s | 260 ms | 0 | 5.9 s |
-| Desktop | 100 | 100 | 100 | 100 | 0.4 s | 0.5 s | 30 ms | 0 | 0.6 s |
+| Mobile | 99 | 100 | 100 | 100 | 1.5 s | 2.0 s | 50 ms | 0 | 1.5 s |
+| Desktop | 100 | 100 | 100 | 100 | 0.4 s | 0.5 s | 0 ms | 0 | 0.5 s |
+
+Lighthouse 13.4.1, run on 16 Oct 2026.
+
+#### Desktop
+
+![Lighthouse desktop report: 100 Performance, 100 Accessibility, 100 Best Practices, 100 SEO](docs/lighthouse/desktop.png)
+
+#### Mobile
+
+![Lighthouse mobile report: 99 Performance, 100 Accessibility, 100 Best Practices, 100 SEO](docs/lighthouse/mobile.png)
 
 ## Animation
 
@@ -92,7 +102,7 @@ Only `transform` and `opacity` animate, so nothing forces a layout recalculation
 
 ## Known limitations
 
-- Mobile performance is 85 (LCP 2.6 s, TBT 260 ms, Speed Index 5.9 s).
+- Mobile performance is 99, not 100 (LCP 2.0 s on throttled mobile).
 - The Ecosystem videos come from the company's CDN, so their size and uptime are outside this project.
 - Testimonials are placeholders.
 - No automated tests, no current-section highlight in the nav, no social preview image.
