@@ -1,0 +1,45 @@
+@theme {
+  /* Colors */
+  --color-surface: #0b0b0e;
+  --color-surface-raised: #141418;
+  --color-surface-overlay: #12081c;
+  --color-fg: #fafafa;
+  --color-fg-muted: #a1a1aa;
+  --color-fg-subtle: #84848e;
+  --color-border: #26262a;
+
+  --color-brand: #7c3aed;
+  --color-brand-hover: #8b4ff2;
+  --color-brand-soft: #b794fc;
+  --color-accent: #f5e6b8;
+  --color-info: #1e3a5f;
+  --color-gold: #f5b82e;
+
+  /* Fonts */
+  --font-sans: 'Golos Text Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Type scale */
+  --text-display: clamp(1.75rem, 1.2rem + 2.6vw, 3.25rem);
+  --text-display--line-height: 1.05;
+  --text-display--letter-spacing: -0.02em;
+  --text-h2: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+  --text-h2--line-height: 1.2;
+  --text-lead: clamp(0.9375rem, 0.88rem + 0.3vw, 1.125rem);
+  --text-lead--line-height: 1.7;
+  --text-eyebrow: 0.6875rem;
+  --text-eyebrow--line-height: 1.5;
+  --text-eyebrow--letter-spacing: 0.22em;
+
+  /* Shape and depth */
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+  --radius-xl: 1.25rem;
+  --shadow-glow: 0 0 0 1px rgb(124 58 237 / 0.45), 0 12px 44px -10px rgb(124 58 237 / 0.5);
+  --shadow-gold: 0 0 30px 4px rgb(255 255 255 / 0.14), 0 0 80px 0 rgb(255 255 255 / 0.07), 0 0 140px 10px rgb(255 255 255 / 0.04);
+
+  /* Layout */
+  --container-page: 80rem;
+  --spacing-section: clamp(4rem, 3rem + 5vw, 7rem);
+  --spacing-gutter: clamp(0.75rem, 0.2rem + 2.4vw, 2rem);
+}

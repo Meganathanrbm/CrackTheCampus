@@ -1,0 +1,6 @@
+@import '@fontsource-variable/golos-text/wght.css';
+@import '@fontsource-variable/jetbrains-mono/wght.css';
+@import 'tailwindcss';
+@import './theme.css';
+@import './animations.css';
+@import './base.css';
